@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  background-color: hsl(var(--sidebar-background));
+  color: hsl(var(--sidebar-foreground));
+  width: 100%;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+}
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+nav ul li a {
+  padding: 0.5rem 1rem;
+}
+
+nav ul li {
+  display: inline-block;
+}
+nav ul li a:hover {
+  color:blue;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.icon {
+  padding: 0.5rem 0rem;
+  border-radius: 0.5rem;
+  color: hsl(var(--sidebar-accent-foreground));
+  border: solid 1px hsl(var(--sidebar-accent-foreground));
+}
+
+.icon a:hover {
+  background-color: rgb(188, 188, 56);
+  color: hsl(var(--sidebar-accent-foreground));
+  border-radius: 0.5rem;
+  transition: all 0.4s ease-in-out;
+}
